@@ -1,0 +1,11 @@
+# Sample file.  Comments are ignored.
+
+SAY Hello there.
+COUNT 1 to 4 every 0.25   # voice counts out numbers every 0.5 seconds
+SAY Done counting.
+PAUSE 2  # seconds
+BEEP 1 time
+BEEP 3 times every 2   # default pause of 1 seconds
+SAY All done, thanks!
+EXIT
+SAY I'll never actually reach here.
