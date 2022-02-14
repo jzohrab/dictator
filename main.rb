@@ -9,15 +9,18 @@ lines = File.read(ARGV[0]).
           
 # puts lines
 
+ISTEST = !ENV['TEST'].nil?
+
 $voice = 'Daniel'  # Default
 
 def say(s)
-  `say -v #{$voice} "#{s}"`
+  puts "Saying #{s}"
+  `say -v #{$voice} "#{s}"` unless ISTEST
 end
 
 def pause(s)
   puts "pausing #{s.to_f}"
-  sleep(s.to_f)
+  sleep(s.to_f) unless ISTEST
 end
 
 def count(s)
@@ -40,7 +43,7 @@ def beep(s)
   i = 0
   while i < count
     puts i
-    puts `tput bel`
+    puts `tput bel` unless ISTEST
     pause(wait)
     i += 1
   end

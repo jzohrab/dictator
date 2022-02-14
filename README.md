@@ -9,3 +9,9 @@ Usage:
 ```
 ruby main.rb sample.txt
 ```
+
+If you're working on a script and don't actually want it to "execute", run it with a `TEST` environment variable:
+
+```
+TEST=yes ruby main.rb sample.txt
+```
