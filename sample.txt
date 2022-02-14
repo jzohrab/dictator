@@ -1,11 +1,26 @@
 # Sample file.  Comments are ignored.
 
 SAY Hello there.
-COUNT 1 to 4 every 0.25   # voice counts out numbers every 0.5 seconds
-SAY Done counting.
+
+SAY Hit Return key to continue.
+WAITFORUSER
+SAY Ok, thank you.
+
+SAY Counting with 1 second pauses
+COUNT 1 to 4
+
+SAY Counting with specified pauses
+COUNT 1 to 3 every 4  # 4 seconds
+COUNT 1 to 3 every 0.25
+
+SAY Pausing for 2 seconds.
 PAUSE 2  # seconds
+
+SAY Beep once, pause for 1 second after beep
 BEEP 1 time
 BEEP 3 times every 2   # default pause of 1 seconds
+
 SAY All done, thanks!
+
 EXIT
 SAY I'll never actually reach here.

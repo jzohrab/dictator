@@ -27,8 +27,8 @@ def count(s)
   parts = s.split(' ')
   i = parts[0].to_i
   wait = 1
-  if (parts.length == 4)
-    wait = parts[3]
+  if (parts.length == 5)
+    wait = parts[4]
   end
 
   while i <= parts[2].to_i
@@ -36,6 +36,13 @@ def count(s)
     pause(wait)
     i += 1
   end
+end
+
+def waitforuser(s)
+  puts "Hit key to continue"
+  $stdin.flush
+  $stdin.gets()
+  puts "ok ..."
 end
 
 def beep(s)
@@ -69,6 +76,8 @@ lines.each do |lin|
     pause(args)
   when 'BEEP'
     beep(args)
+  when 'WAITFORUSER'
+    waitforuser(args)
   when 'EXIT'
     puts 'Quitting ...'
     exit(0)
