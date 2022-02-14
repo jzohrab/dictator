@@ -26,9 +26,14 @@ end
 def count(s)
   parts = s.split(' ')
   i = parts[0].to_i
+  wait = 1
+  if (parts.length == 4)
+    wait = parts[3]
+  end
+
   while i <= parts[2].to_i
     say(i)
-    pause(parts[4])
+    pause(wait)
     i += 1
   end
 end
