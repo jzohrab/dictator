@@ -1,0 +1,122 @@
+# Tinnitus work.
+
+# "How to Naturally Get Rid of Tinnitus | Dr Alan Mandell"
+SAY Part One.
+SAY Open and close your mouth a few times.
+PAUSE 4
+SAY Push your thumbs in your ears, and pull out with a pop!  5 times.
+COUNT 1 to 5 every 1
+SAY Continue, but now open your mouth as you push in, and close as as you pull out.  10 times.
+COUNT 1 to 10 every 2
+SAY 30 second massage of whole lobe, starting now.
+PAUSE 30
+SAY Sharp tug to pull the lobes straight out.  5 times.
+COUNT 1 to 5 every 2
+SAY Pull and hold lobes out, yawn and move jaw.  5 times.
+COUNT 1 to 5 every 2
+SAY Rub your thumbs at the top of your ear, where ear meets the skull.  20 seconds, starting now.
+PAUSE 20
+SAY Pinch your nose, close your mouth, and blow moderate pressure to pop your ears.  5 times.
+COUNT 1 to 5 every 3
+
+
+# "How to get rid of Tinnitus naturally"
+SAY Part 2
+SAY Place both palms on side of head behind your ears and strongly rub forwards, folding over the ears as go past.  20 times.
+COUNT 1 to 20
+
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Rub your heels of palms on temples, feel warm on sides of head.  20 times.
+COUNT 1 to 20
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Right hand, thumb in the middle of tragus, push it in on pulses, 40 times.
+COUNT 1 to 40 every 0.3
+SAY Hold for 10.
+PAUSE 10
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Left hand, thumb in the middle of tragus, push it in on pulses, 40 times.
+COUNT 1 to 40 every 0.3
+SAY Hold for 10.
+PAUSE 10
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Both hands, thumb in the middle of tragus, push it in on pulses, 70 times.
+COUNT 1 to 70 every 0.3
+SAY Hold for 10.
+PAUSE 10
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Rub ears and forehead, warm on sides of head, 10 rubs.
+COUNT 1 to 10
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Tap all fingers together rapidly behind ears, for 10 seconds.
+PAUSE 10
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Push thumbs in ears, and blow breath out nose, 20 snorts.
+COUNT 1 to 20
+SAY Hold for 10
+PAUSE 10
+SAY Relax and shake out your hands.
+PAUSE 2
+
+SAY Rub your hands over ears (no lobe folding, palms covering ears) ten times
+COUNT 1 to 10
+SAY Relax and shake out your hands.
+PAUSE 2
+
+
+# "How to remove Tinnitus ringing from the brain"
+SAY Part 3.
+
+SAY Both hands tap rapidly on different parts of your head, for 10 seconds each.
+SAY Top of your head, tap rapidly.
+PAUSE 10
+SAY Stop and hold fingers for 10 seconds.
+PAUSE 10
+
+SAY Repeat on side of head, at temples.
+PAUSE 10
+SAY Stop and hold fingers for 10 seconds.
+PAUSE 10
+
+SAY Repeat on back of head.
+PAUSE 10
+SAY Stop and hold fingers for 10 seconds.
+PAUSE 10
+
+SAY Left palm on left ear, push and then "pop" it off, 5 times
+COUNT 1 to 5 every 2
+
+SAY Right palm on right ear, push and then "pop" it off, 5 times
+COUNT 1 to 5 every 2
+
+SAY Left palm on left ear, push and then "pop" it off, 5 times
+COUNT 1 to 5 every 2
+
+SAY Right palm on right ear, push and then "pop" it off, 5 times
+COUNT 1 to 5 every 2
+
+SAY Close nose and breathe out to pop ear, 5 times
+COUNT 1 to 5 every 2
+
+SAY Put fingers on top, palms near temples, close your eyes, and slowly breathe in and out through the nose 5 times
+COUNT 1 to 5 every 4
+
+
+# *** 50 finger thwacks
+SAY Part 4.
+SAY Do fifty finger snaps on back of skull, then hit Return key to continue.
+WAITFORUSER
+SAY Okay, you are all done.  Thanks!

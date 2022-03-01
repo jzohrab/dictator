@@ -1,0 +1,22 @@
+# Arpeggios
+
+# m7b5
+Minor 7 flat 5, root, first finger
+Minor 7 flat 5, root, second finger
+Minor 7 flat 5, root, third finger
+Minor 7 flat 5, root, fourth finger
+
+Minor 7 flat 5, minor third, first finger
+Minor 7 flat 5, minor third, second finger
+Minor 7 flat 5, minor third, third finger
+Minor 7 flat 5, minor third, fourth finger
+
+Minor 7 flat 5, flat five, first finger
+Minor 7 flat 5, flat five, second finger
+Minor 7 flat 5, flat five, third finger
+Minor 7 flat 5, flat five, fourth finger
+
+Minor 7 flat 5, minor seventh, first finger
+Minor 7 flat 5, minor seventh, second finger
+Minor 7 flat 5, minor seventh, third finger
+Minor 7 flat 5, minor seventh, fourth finger
