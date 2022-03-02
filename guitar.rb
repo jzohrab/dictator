@@ -8,8 +8,7 @@ lines = File.read(ARGV[0]).
           select { |lin| lin.strip != "" }
 
 # Total practice time, seconds:
-TOTAL_TIME = 20 * 60
-
+TOTAL_TIME = 30 * 60
 time_per_line = (TOTAL_TIME / lines.size).to_i
 
 lines = lines.map do |lin|
