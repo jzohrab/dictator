@@ -2,7 +2,15 @@
 
 require_relative './dictator'
 
-lines = File.read(ARGV[0]).
+raise "File required" if ARGV[0].nil?
+
+f = ARGV[0]
+if !File.exist?(f) then
+  f = File.join(File.dirname(__FILE__), f)
+end
+raise "Missing file #{ARGV[0]}" unless File.exist?(f)
+
+lines = File.read(f).
           split("\n").
           select { |lin| lin !~ /^#/ }.
           select { |lin| lin.strip != "" }

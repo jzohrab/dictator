@@ -3,7 +3,13 @@
 
 require_relative './dictator'
 
-lines = File.read(ARGV[0]).
+f = ARGV[0]
+if !File.exist?(f) then
+  f = File.join(File.dirname(__FILE__), f)
+end
+raise "Missing file #{f}" unless File.exist?(f)
+
+lines = File.read(f).
           split("\n").
           map { |s| s.strip }.
           map { |s| s.gsub(/#.*$/, '') }.
