@@ -20,21 +20,23 @@ arp_count = lines.size
 
 def extract_weight_and_instruction(s)
   s.gsub!(/#.*/, '')  # remove comments
-  h = {
-    weight: 1,
-    instruction: s.strip
-  }
+  instr = s.strip
+  weight = 1
+
   if (s =~ /:/)
     parts = s.split(':').map { |p| p.strip }
-    h[:weight] = parts[0].to_i
-    h[:instruction] = parts[1]
+    weight = parts[0].to_i
+    instr = parts[1]
   end
 
-  if (h[:weight] > 1) then
-    h[:instruction] = "Weight #{h[:weight]}, #{h[:instruction]}"
+  if (weight > 1) then
+    inst = "#{instr}, weight #{weight}"
   end
 
-  return h
+  return {
+    weight: weight,
+    instruction: instr
+  }
 end
 
 instructions = lines.map { |s| extract_weight_and_instruction(s) }
