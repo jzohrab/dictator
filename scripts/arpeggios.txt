@@ -1,22 +1,97 @@
 # Arpeggios
+# To be played with guitar.rb:
+# $ ruby guitar.rb scripts/arpeggios.txt
 
-# m7b5
-Minor 7 flat 5, root, first finger
-Minor 7 flat 5, root, second finger
-Minor 7 flat 5, root, third finger
-Minor 7 flat 5, root, fourth finger
+# Line format:
+# weight: instruction
+#
+# Weights determine time to be spent on something.
+# eg. a 3 weight will last 3 times longer than a 1 weight.
+#
+# If the weight is missing, it's assumed to be weight 1
 
-Minor 7 flat 5, minor third, first finger
-Minor 7 flat 5, minor third, second finger
-Minor 7 flat 5, minor third, third finger
-Minor 7 flat 5, minor third, fourth finger
+# instructions are said by the dictator.
 
-Minor 7 flat 5, flat five, first finger
-Minor 7 flat 5, flat five, second finger
-Minor 7 flat 5, flat five, third finger
-Minor 7 flat 5, flat five, fourth finger
+Major, first finger low E root, 2.5 octaves
+Major, first finger A root, two octaves
+Major, first finger low E root, three octaves
 
-Minor 7 flat 5, minor seventh, first finger
-Minor 7 flat 5, minor seventh, second finger
-Minor 7 flat 5, minor seventh, third finger
-Minor 7 flat 5, minor seventh, fourth finger
+# ------------------------
+# m7b5 2nps
+Minor 7 flat 5, 2 notes per string, from root
+Minor 7 flat 5, 2 notes per string, from minor third
+3: Minor 7 flat 5, 2 notes per string, from flat five
+# Minor 7 flat 5, 2 notes per string, starting on minor 7
+
+# ------------------------
+# m7b5 Box shapes
+
+Minor 7 flat 5, sixth string root, first finger
+Minor 7 flat 5, sixth string root, second finger
+Minor 7 flat 5, sixth string root, third finger
+Minor 7 flat 5, sixth string root, fourth finger
+
+Minor 7 flat 5, fourth string root, first finger
+# Minor 7 flat 5, minor third, second finger
+# Minor 7 flat 5, minor third, first finger - same as m7b5 4th string root
+# Minor 7 flat 5, minor third, third finger - same as m3/2nd
+# Minor 7 flat 5, minor third, fourth finger - same as root/1st
+
+Minor 7 flat 5, fifth string root, first finger
+Minor 7 flat 5, fifth string root, first finger, 2 octaves
+Minor 7 flat 5, fifth string root, third finger
+Minor 7 flat 5, fifth string root, fourth finger
+# Minor 7 flat 5, flat five, first finger
+# Minor 7 flat 5, flat five, second finger
+# Minor 7 flat 5, flat five, third finger
+# Minor 7 flat 5, flat five, fourth finger - same as m3/1st
+
+# Minor 7 flat 5, minor seventh, first finger - same as root/3rd
+# Minor 7 flat 5, minor seventh, second finger - same as root/4th
+# Minor 7 flat 5, minor seventh, third finger - same as fifth string root 2 octaves
+# Minor 7 flat 5, minor seventh, fourth finger - same as b5/1st
+
+# ------------------------
+Major add 9, sixth string root, 2.5 octaves
+Major add 9, fifth string root, 2 octaves
+2: Major add 9, sixth string root, 3 octaves
+
+# -------------------------
+# Major 6 2 nps
+
+2: Major 6, 2 notes per string, first finger on sixth string root
+2: Major 6, 2 notes per string, fourth finger on fifth string root
+2: Major 6, 2 notes per string, first finger on fifth string root
+2: Major 6, 2 notes per string, fourth finger on sixth string root
+
+
+# Minor horizontal arpeggio, 2.5 octaves, root on the 6th string
+# Minor horizontal arpeggio, 2.5 octaves, root on the 5th string
+# Minor horizontal arpeggio, 3 octaves, root on the 6th string
+# Minor9 horizontal arpeggio, 2.5 octaves, root on the 6th string
+# Minor9 horizontal arpeggio, 2.5 octaves, root on the 5th string
+# Minor9 horizontal arpeggio, 3 octaves, root on the 6th string
+# Minor6 horizontal position, root on the 6th string, index finger
+# Minor6 horizontal position, root the 5th string, index finger
+# Minor7 horizontal position, root on the 5th string, ring finger
+# Minor7 horizontal position, root on the 4th /6th string, ring finger
+# Half dim horizontal position, root on the 5th string, ring finger
+# Half dim horizontal position, root on the 4th /6th string, ring finger
+# Horizontal dim7 arpeggio
+# 
+# Vertical Arpeggios
+# 5 X major vertical arpeggios
+# 5 X M6 vertical arpeggios
+# 5 X maj7 vertical arpeggios
+# 5 X dom7 vertical arpeggios
+# 4 X minor vertical arpeggios
+# 5 X Minor6 vertical arpeggios
+# 5 X m7 vertical arpeggios
+# 5 X m7b5 vertical arpeggios
+# 3 X dim7 vertical arpeggios
+# 
+# Superimposed Arpeggios:
+# 7b9 arpeggio root on 5th string, 2nd finger
+# 5 X 7add9 vertical arpeggios
+# 6 X maj7add9 vertical arpeggios
+
