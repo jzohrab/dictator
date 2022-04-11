@@ -38,6 +38,7 @@ def extract_weight_and_instruction(s)
 end
 
 instructions = lines.map { |s| extract_weight_and_instruction(s) }
+instructions.shuffle!
 puts instructions
 # exit 1
 
@@ -45,10 +46,14 @@ total_weights = instructions.reduce(0) { |c, i| c + i[:weight] }
 time_per_weight = (TOTAL_TIME / total_weights).to_i
 
 lines = instructions.map do |i|
+  done = [ "Ok", "Good", "Done" ]
+  done = done[rand(done.size)]
   pause = [ i[:weight] * time_per_weight, 20 ].max
   [
     "SAY #{i[:instruction]}",
-    "PAUSE #{pause}"
+    "PAUSE #{pause}",
+    "SAY #{done}!",
+    "PAUSE 2"
   ]
 end
 
