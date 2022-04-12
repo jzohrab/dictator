@@ -65,7 +65,7 @@ end
 instructions = lines.map { |s| extract_weight_and_instruction(s) }
 instructions.shuffle!
 puts instructions
-exit 1
+# exit 1
 
 total_weights = instructions.reduce(0) { |c, i| c + i[:weight] }
 time_per_weight = (TOTAL_TIME / total_weights).to_i
