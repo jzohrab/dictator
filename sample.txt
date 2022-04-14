@@ -2,9 +2,17 @@
 
 SAY Hello there.
 
-SAY Hit Return key to continue.
-WAITFORUSER
+VOICE Samantha
+SAY Hello from Samantha.
+
+VOICE Daniel
+SAY Hello from Daniel.
+
+# If no prompt specified, it says "Hit Return key to continue."
+WAITFORUSER Hit Return
 SAY Ok, thank you.
+
+# EXIT
 
 SAY Counting with 1 second pauses
 COUNT 1 to 4

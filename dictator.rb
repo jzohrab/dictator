@@ -5,7 +5,12 @@ class Dictator
     @voice = 'Daniel'  # Default
     @istest = istest
   end
-  
+
+  def voice(s)
+    puts "Switching voice to #{s}"
+    @voice = s.strip
+  end
+
   def say(s)
     puts "Saying #{s}"
     `say -v #{@voice} "#{s}"` unless @istest
@@ -32,7 +37,11 @@ class Dictator
   end
 
   def waitforuser(s)
-    puts "Hit key to continue"
+    prompt = s
+    if (prompt == '') then
+      prompt = "Hit Return to continue"
+    end
+    say(s)
     $stdin.flush
     $stdin.gets()
     puts "ok ..."
@@ -63,6 +72,8 @@ class Dictator
       command = parts.shift
       args = parts.join(' ')
       case command
+      when 'VOICE'
+        voice(args)
       when 'SAY'
         say(args)
       when 'COUNT'
