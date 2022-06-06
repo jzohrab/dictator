@@ -30,18 +30,25 @@ class Dictator
     end
 
     while i <= parts[2].to_i
+      starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
       say(i)
-      pause(wait)
+      ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+      elapsed = ending - starting
+      extra_wait = wait.to_f - elapsed
+      # puts "Already elapsed #{elapsed} during the say, so wait another #{extra_wait}"
+      if (extra_wait > 0) then
+        pause(extra_wait)
+      end
       i += 1
     end
   end
 
   def waitforuser(s)
-    prompt = s
+    prompt = s.strip
     if (prompt == '') then
       prompt = "Hit Return to continue"
     end
-    say(s)
+    say(prompt)
     $stdin.flush
     $stdin.gets()
     puts "ok ..."
