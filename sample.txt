@@ -21,8 +21,13 @@ SAY Counting with specified pauses
 COUNT 1 to 3 every 4  # 4 seconds
 COUNT 1 to 3 every 0.25
 
+SAY Descending count.
+COUNT 3 to 1
+
 SAY Pausing for 2 seconds.
 PAUSE 2  # seconds
+
+SAY Multiple commands on one line.; COUNT 1 to 3
 
 SAY Beep once, pause for 1 second after beep
 BEEP 1 time

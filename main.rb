@@ -2,6 +2,7 @@
 # Interpret each line as a command and read it.
 
 require_relative './dictator'
+require 'erb'
 
 f = ARGV[0]
 if !File.exist?(f) then
@@ -9,11 +10,16 @@ if !File.exist?(f) then
 end
 raise "Missing file #{f}" unless File.exist?(f)
 
-lines = File.read(f).
+renderer = ERB.new(File.read(f))
+output = renderer.result()
+
+lines = output.
           split("\n").
-          map { |s| s.strip }.
+          map { |s| s.split(";") }.
+          flatten
+lines = lines.
           map { |s| s.gsub(/#.*$/, '') }.
-          select { |s| s !~ /^$/ }
+          select { |s| s.strip != '' }
           
 # puts lines
 

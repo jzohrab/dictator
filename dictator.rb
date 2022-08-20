@@ -4,6 +4,8 @@ class Dictator
   def initialize(istest = false)
     @voice = 'Daniel'  # Default
     @istest = istest
+    @nopause = false
+    @nocount = false
   end
 
   def voice(s)
@@ -12,24 +14,34 @@ class Dictator
   end
 
   def say(s)
-    puts "Saying #{s}"
+    # puts "Saying #{s}"
     `say -v #{@voice} "#{s}"` unless @istest
   end
 
   def pause(s)
-    puts "pausing #{s.to_f}"
-    sleep(s.to_f) unless @istest
+    return if @istest
+    return if @nopause
+    # puts "pausing #{s.to_f}"
+    sleep(s.to_f)
   end
 
   def count(s)
+    return if @nocount
     parts = s.split(' ')
-    i = parts[0].to_i
+
+    startat = parts[0].to_i
+    endat = parts[2].to_i
+    counters = (startat..endat).to_a
+    if (endat < startat) then
+      counters = (endat..startat).to_a.reverse
+    end
+
     wait = 1
     if (parts.length == 5)
       wait = parts[4]
     end
 
-    while i <= parts[2].to_i
+    counters.each do |i|
       starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
       say(i)
       ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
@@ -39,7 +51,6 @@ class Dictator
       if (extra_wait > 0) then
         pause(extra_wait)
       end
-      i += 1
     end
   end
 
@@ -73,12 +84,18 @@ class Dictator
   # Main method.
   def dictate(lines)
     lines.each do |lin|
-      puts '-' * 20
+      # puts '-' * 20
       puts lin
       parts = lin.split(' ')
       command = parts.shift
       args = parts.join(' ')
       case command
+      when 'NOPAUSE'
+        puts "** turning off pauses"
+        @nopause = true
+      when 'NOCOUNT'
+        puts "** turning off counts"
+        @nocount = true
       when 'VOICE'
         voice(args)
       when 'SAY'

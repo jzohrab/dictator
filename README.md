@@ -4,7 +4,7 @@ I often create small audio scripts that I want the computer to read aloud ...  B
 
 See the sample.txt for an example.
 
-Usage:
+## Usage
 
 ```
 ruby main.rb sample.txt
@@ -14,4 +14,12 @@ If you're working on a script and don't actually want it to "execute", run it wi
 
 ```
 TEST=yes ruby main.rb sample.txt
+```
+
+## ERB
+
+The text file can also use ERB, i.e., embedded ruby, which is helpful when the script contains many repetitions of the same thing.  See erbsample.txt for an example.
+
+```
+ruby main.rb erbsample.txt
 ```

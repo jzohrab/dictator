@@ -1,0 +1,7 @@
+SAY Generating.
+<% (1..4).to_a.each do |i| %>
+SAY Hello number <%= i %>
+COUNT 1 to 3
+SAY End number <%= i %>
+PAUSE 2
+<% end %>
