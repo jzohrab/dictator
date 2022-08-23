@@ -83,9 +83,10 @@ class Dictator
 
   # Main method.
   def dictate(lines)
+    i = 0
     lines.each do |lin|
-      # puts '-' * 20
-      puts lin
+      i += 1
+      puts "(#{i}/#{lines.size}) #{lin}"
       parts = lin.split(' ')
       command = parts.shift
       args = parts.join(' ')
